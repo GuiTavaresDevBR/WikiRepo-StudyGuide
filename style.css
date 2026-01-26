@@ -9,7 +9,7 @@
   margin: auto;
   margin-top: 50px;
   max-width: 800px;
-  padding: 20px;
+  padding: 50px;
   border: 1px solid gray;
   border-radius: 20px;
   box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.434);
@@ -30,14 +30,14 @@ small {
   margin-bottom: 40px;
 }
 h2 {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   border-bottom: 4px solid orange;
   padding-bottom: 5px;
   display: inline-block;
 }
 
 .techContainer {
-  border: 3px solid lightgray;
+  border: 2px solid black;
   padding: 20px;
   margin-bottom: 40px;
   display: flex;
@@ -46,6 +46,10 @@ h2 {
 }
 
 .buttonContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .mainButton {
