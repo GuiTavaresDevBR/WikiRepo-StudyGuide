@@ -55,9 +55,16 @@ h2 {
   padding-bottom: 5px;
   display: inline-block;
 }
+h4 {
+  margin-bottom: 20px;
+}
 
 p {
   margin-bottom: 30px;
+}
+
+ul {
+  margin-bottom: 20px;
 }
 
 span {

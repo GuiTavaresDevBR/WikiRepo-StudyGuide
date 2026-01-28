@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <a class="backLink" href="../../index.html"> Voltar </a>
+      <h1>Conceito POO</h1>
+      <h4>
+        Programação Orientada a Objetos, é um paradigma de programação que
+        organiza o código em objetos, que representam coisas do mundo real ou
+        conceitos de sistema. Cada objeto possui seu conjunto de dados
+        (atributos) e seus respectivos comportamentos (métodos). A POO serve par
+        aorganizar melhor o código, facilitar manutenção e evolução,
+        reaproveitamento, reduzir complexidade apesar de no início dos estudos
+        parecer que não e principalmente aproximar o código da realidade. POO é
+        vastamente utilizado nos sitemas grande e de longo prazo.
+      </h4>
+      <p>
+        <span>Classe:</span> É um molde ou modelo para criar objetos. Dentro da
+        classe é definido quais atributos o objeto terá e também quais métodos
+        ele poderá executar. Um exemplo comum: Pessoa pode ser um classe, onde
+        pode ter seus atributos ( nome, idade, ), e seus métodos ( dormir,
+        trabalhar).
+      </p>
+      <p>
+        <span>Objeto:</span> É uma instancia de uma classe, ou seja, um objeto
+        criado a partir do molde. No exemplo acima, podemos criar o objeto
+        "Fulano", que será uma instancia da classe Pessoa.
+      </p>
+      <p>
+        <span>Encapsulamento</span> É uma forma de proteger os dados do objeto e
+        controla como eles são acessados. Atributos geralmente são Privados e o
+        acesso é feito através dos métodos Getters and Setters. Vantagem:
+        Segurança e Organização.
+      </p>
+      <p>
+        <span> abstração</span> Foca apneas no que é importante, escondendo
+        detalhes internos. Exemplo: Você usa um carro sem saber como o motor
+        funciona internamente
+      </p>
+      <p>
+        <span> Herança</span> É o ato de permitir que uma classe Herde
+        características e comportamentos de outra. Permite que reutilizemos
+        código e principalmente criarmos hierarquia entre as classes. por
+        exemplo: Pessoa -> Aluno
+      </p>
+      <p>
+        <span>Polimorfismo</span> Permite que o mesmo método tenha comportamento
+        diferentes.
+      </p>
+      <p>
+        <span>Construtor</span> É um método especial executado ao criar um
+        objeto. Serve para incializar atributos e garantir o estado inicial
+        válido. Por exemplo, se for impossível de existir um objeto sem nome por
+        exemplo, é através do cosntrutor que só iremos instanciar esse objeto se
+        ele já tiver o nome.
+      </p>
+      <p>
+        <span>Modificadores de Acesso:</span> Controlam quem opde acessar os
+        métodos e os atributos dentro das classes.
+      </p>
+      <ul>
+        <li>Public: Acesso Livre</li>
+        <li>Private: Acesso omente dentro da Classe</li>
+        <li>Protected: Acesso por Herança</li>
+      </ul>
+      <p>
+        <span>Interface</span> Define um contrato: O que uma classe deve
+        implementar. Não possui implementação ( em geral), força padronização
+      </p>
+      <p>
+        <span>Classe Abstrata </span> É uma classe que NUNCA poderá ser
+        instanciada. Pode ter métodos implementados e não implementados. Usado
+        como base para outras classes. Para entender, imagina o cenário de uma
+        escola. Teremos uma classe Pessoa com atributos em comuns como nome,
+        sexo, etc. E obrigatóriamente essa pessoa poderá ser Professor ou Aluno
+        ( classes ). Logo, nunca existirá uma Pessoa sem ser um desses dois,
+        logo, a classe Pessoa poderá ser abstrata.
+      </p>
+      <p><span>Composição</span> Uma classe possui outra</p>
+      <p>
+        <span> Associação </span> Relacionamento entre classes: Um usa outro,
+        relação mais solta.
+      </p>
+      <p>
+        <span>Acomplamento</span> Grau de dependencias entre classes. Lembre-se
+        sempre: Seja em classes ou em qualquer outro pilar da programação o
+        objetivo sempre será um código o menos acoplado possível, assim
+        facilitamento a manutenção
+      </p>
+      <p>
+        <span> Coesão</span> Diferente do acoplamento, uma classe deve ser o
+        mais coesa possível, deixando sempre clara a sua responsabilidade.
+      </p>
+    </div>
+  </body>
+</html>
