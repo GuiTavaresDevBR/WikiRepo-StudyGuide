@@ -4,12 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React</title>
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../style.css" />
   </head>
   <body>
     <div class="mainContainer">
       <a class="backLink" href="../../index.html"> Voltar </a>
       <h1>React JS</h1>
+      <h4>
+        Aqui é onde começa a ter contato com o FRONTEND do mundo real. É
+        importante ressaltar que para inciar os estudos em um framework, é
+        importante que tenha sólidos estudos em Javascript puro, para que
+        entenda o que está acontecendo e realmente saiba trabalhar com React.
+        Possuindo esses conceitos claros, o entendimento e trabalhar com React
+        fica muito mais fácil.
+      </h4>
+      <h4>
+        React é uma biblioteca JS para construir interfaces de usuário (UI) de
+        forma mais rápida e eficaz. Ela permite criar interface dividindo a tela
+        em componentes reutilizaveis.React é basicamente focado em:
+      </h4>
+      <ul>
+        <li>Performance</li>
+        <li>Organização</li>
+        <li>Reaproveitamento de Código</li>
+        <li>Atualização eficiente de tela</li>
+      </ul>
+      <p>
+        <span>Componentes:</span> Componentes são blocos independentes de
+        interface Tudo em react é um componente. Componentes dentro do react
+        sempre irá retornar um JSX.
+      </p>
+      <p>
+        <span>JSX:</span> É basicamente JavaScript + HTML. É uma sintaxe que
+        parece HTML dentro do Javascript. Aqui conseguimos misturar Tags e
+        Scripts dentro do mesmo "ambiente". Claro que mais para frente iremos
+        aprender as melhores boas práticas para isso. É de extrema importancia
+        saber pequenas regras:
+      </p>
+      <ul>
+        <li>Só pode retornar um único elemtno pai por vez.</li>
+        <li>Diferente do HTML, aqui usamos className ao invés de class.</li>
+        <li>Use {} para inserir JavaScript.</li>
+      </ul>
+      <p>
+        <span>Props:</span> São propriedades passadas para componentes. Servem
+        para comunicação entre componentes. Ex: Uma página pode passar dados
+        para outra página, e assim ela receber as informações na mesma.
+      </p>
+      <p>
+        <span>Renderização:</span> React atualiza a tela automaticamente assim
+        que algum state usa. Isso acontece via Virtual DOM. O React basicamente
+        compara o state antigo com o state novo, e assim atualiza penas o
+        necessário, melhorando a performance nao sendo necessário atualizar a
+        página inteira. Esse conceito é chamado de SPA (Single page Application)
+      </p>
+      <p>
+        <span>States</span> State = Dados internos do componente. Através de
+        STATES, podemos permitir que a interface se atualize dinamicamente. Aqui
+        iremos aprender o primeiro HOOK de react, chamado de useState.
+      </p>
+      <ul>
+        <li>const [numero, setNumero] = useState(0)</li>
+        <li>
+          Nunca tualizamos a variavel numero direto, sempre será através da
+          funcao setNumero.
+        </li>
+      </ul>
+      <p>
+        <span>Eventos</span> Eventos funcionam parecido com o JS normal, mas em
+        camelCase. como por exemplo:
+      </p>
+      <ul>
+        <li>onChange</li>
+        <li>onCLick</li>
+      </ul>
+      <p>
+        <span>useEffect</span> Aqui iremos aprender nosso segundo hook do react,
+        qeu é um hook para efeitos coletarais. Ele é disparado sempre que um
+        componente for renderizado , ou quando algum state que voce informar for
+        alterado. Extremamente util para requisicoes, timers, manipulacao
+        externa, APIS, etc.
+      </p>
+      <ul>
+        <li>
+          useEffect(() => {fazer algo qd ativado}, [states a serem monitorados])
+        </li>
+      </ul>
+      <p>
+        <span>Condicional JSX </span> Dentro de cada componente, podemos
+        renderizar determinados elementos de acordo com uma condicao. Por
+        exemplo:
+      </p>
+      <ul>
+        <li>{logado ? Home : Login }</li>
+        <li>{logado && Dashboard}</li>
+      </ul>
+      <p>
+        <span>Listas e Map</span> Através desses items, conseguimos por exemplo
+        renderizar uma lista dentro do Jsx, ficando da seguinte forma:
+      </p>
+      <ul>
+        <li>const lista = [1,2,3]</li>
+        <li>lista.map(item => (</li>
+        <li><p key="{item}">{item}</p></li>
+        <li>))</li>
+      </ul>
+      <p><span>Principais Hooks:</span></p>
+      <ul>
+        <li>useState</li>
+        <li>useEffect</li>
+        <li>useRef</li>
+        <li>useContext</li>
+        <li>useMemo</li>
+        <li>useCallback</li>
+      </ul>
     </div>
   </body>
 </html>
