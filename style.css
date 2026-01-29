@@ -93,6 +93,7 @@ span {
   border: 2px solid gray;
   border-radius: 20px;
   margin-bottom: 40px;
+  box-shadow: 4px 4px 4px lightgray;
 }
 
 .techContainer h2 {
