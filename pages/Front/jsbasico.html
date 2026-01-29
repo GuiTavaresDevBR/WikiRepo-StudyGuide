@@ -122,6 +122,32 @@
         extrema importância para um Dev, pois ao trabalhar no mercado real, isso
         será normal de uso no dia a dia.
       </p>
+      <p>
+        <span>Fetch(HTTP)</span> é uma das formas de lidarmos com a requisição
+        assíncrona.
+      </p>
+      <ul>
+        <li>
+          fetch(xxxxxxx).then(res => res.json()).then(data => conlog(data));
+        </li>
+      </ul>
+      <p>
+        <span>Async/Await</span> É a outra forma de trablharmos com requisições
+        asíncronas.
+      </p>
+      <ul>
+        <li>async function buscar() {</li>
+        <li>const res = await fetch("https://api.com/dados");</li>
+        <li>const data = await res.json();</li>
+        <li>console.log(data);}</li>
+      </ul>
+      <h2>Conceitos Importantes JS</h2>
+      <p>
+        <span>Hoisting</span> Funções e VAR sobem para o topo do escopo. É
+        basicamente sabermos que existem blocos de códigos, e que por ex, uma
+        variavel declarada dentro de uma funcao nao poderá ser vista fora dela
+        por exemplo, caso seu valor nao seja retornada.
+      </p>
     </div>
   </body>
 </html>
