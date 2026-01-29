@@ -3,13 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../../style.css">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="../../style.css" />
   </head>
   <body>
     <div class="mainContainer">
       <a class="backLink" href="../../index.html"> Voltar </a>
       <h1>JavaScript Básico</h1>
+      <h4>
+        JavaScript é a linguagem de programação obrigatória para o frontend. Com
+        o tempo, será possível perceber que se você tiver um bom pilar, as
+        demais linguagens são bem parecidas. Todos os frameworks mais utilizados
+        no mercado (React, Vue, Angular) são frameworks da linguagem JS. Um dos
+        maiores erros da programação é começar estudando direto o framework sem
+        ter uma boa noção da linguagem em si. Um profissional diferenteciado é o
+        que sabe a linguagem a fundo. Aqui iremos abordar os principais tópicos
+        do JS.
+      </h4>
+      <h2>Tópicos JS Básicos:</h2>
+      <p>
+        <span>Tipos de Dados:</span> aqui veremos os timos de dados existentes
+        em JS:
+      </p>
+      <ul>
+        <li>STRING - "texto"</li>
+        <li>NUMBER - "10, 3.5"</li>
+        <li>BOOLEAN - true / false</li>
+        <li>UNDEFINED - variável declarada sem valor</li>
+        <li>NULL - ausencia intencional de valor</li>
+        <li>BIGINT - números muito grandes</li>
+      </ul>
+      <p>
+        <span>Objetos: </span> Tudo o que não é primitivo dentro do JS é um
+        objeto. Object, Arrays, Functions, Dates. Tudo isso é considerado um
+        objeto. Porém dentro da programação é muito como nos depararmos com
+        objetos do tipo:
+      </p>
+      <ul>
+        <li>let pessoa = { nome: "Guilherme", idade: 25 };</li>
+      </ul>
+      <p>
+        <span>Variáveis:</span> É a declaração na qual poderemos armazenar os
+        dados. No JS elas não são fortemente tipadas. As mais utilizadas são:
+      </p>
+      <ul>
+        <li>LET - pode mudar valores</li>
+        <li>CONST - Valores não podem ser alterados.</li>
+      </ul>
+      <p>
+        <span>Condicionais</span> Aqui as condicionais funcionam basicamente
+        igual nas demais linguagens a base de IF/ELSE.
+      </p>
+      <ul>
+        <li>if( idade > 18){console.log("deu certo")}else{...}</li>
+      </ul>
+      <p>
+        <span>Funções</span> funções em javascript podem ser declaradas
+        basicamente de três formas:
+      </p>
+      <ul>
+        <li>TRADICIONAL: function soma(a,b){ return a + b}</li>
+        <li>ARROW FUNCTION: const soma = (a + b ) => a + b</li>
+      </ul>
+      <p>
+        <span> Arrays </span> Arrays em JS sao colocados entre [] EX: let lista
+        = [1,2,3]. É de extrema importancia saber que os arrays possuem Métodos
+        de fundamental importancia para saber manusea-los
+      </p>
+      <ul>
+        <li>push() - adiciona</li>
+        <li>pop() - remove o último</li>
+        <li>shift()- remove o primeiro</li>
+        <li>unshift() - adiciona no início</li>
+        <li>lenght - tamanho de posições do array.</li>
+      </ul>
+      <h2>Novidades ES6</h2>
+      <p>
+        <span>Template Strings</span> Forma de intercalar frase com variáveis
+        através do símbolo de $.
+      </p>
+      <ul>
+        <li>let nome = "Gui"</li>
+        <li>console.log(`Olá ${nome}`)</li>
+      </ul>
+      <p>
+        <span>Desestruturação</span> Aqui é fundamental e muito utilziado nos
+        dias de hoje. É uma forma de retirarmos dados de um objeto e já
+        atribuirmos para variáveis específicas. por exemplo:
+      </p>
+      <ul>
+        <li>const pessoa = { nome: "Gui", idade: 20 };</li>
+        <li>const { nome, idade } = pessoa;</li>
+      </ul>
+      <p>
+        Dessa forma, teremos a variável nome e dade, com os respectivos valores
+        retirados de dentro do objeto pessoa.
+      </p>
+      <p><span>Spread Operator</span></p>
+      <p><span>Rest Operator</span></p>
+      <p><span>Métodos Arrays Modernos:</span></p>
+      <ul>
+        <li>MAP - Transforma o Array - const dobro = [1,2].map(n => n*2)</li>
+        <li>
+          FILTER - Filtra no Array - const maiores = [5,10].filter(n => n > 5)
+        </li>
+        <li>REDUCE</li>
+        <li>FIND - Encontra - const item = array.find(x => x.id === 1)</li>
+        <li>
+          FOREACH - Percorre o array - array.forEach( item => console.log(item))
+        </li>
+      </ul>
+      <p>
+        <span>Assíncrone em Javascript</span> - JavaScript é Single-Thread, mas
+        trabalha também com tarefas Assíncronas. Por exemplo, ao realizarmos uma
+        requisicão para uma api externa, estaremos realizando uma tarefa
+        Assíncrona, pois precisaremos esperar a resposta da API, que pode ser
+        rapida ou demorar muito tempo para ser resolvida. Esse assunto é de
+        extrema importância para um Dev, pois ao trabalhar no mercado real, isso
+        será normal de uso no dia a dia.
+      </p>
     </div>
   </body>
 </html>
